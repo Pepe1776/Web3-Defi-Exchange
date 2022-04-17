@@ -342,11 +342,11 @@ export default function Home() {
             You have:
             <br />
             {/* Convert the BigNumber to string using the formatEther function from ethers.js */}
-            {utils.formatEther(cdBalance)} Crypto Dev Tokens
+            {utils.formatEther(cdBalance)} J Parker Dev Tokens
             <br />
             {utils.formatEther(ethBalance)} Ether
             <br />
-            {utils.formatEther(lpBalance)} Crypto Dev LP tokens
+            {utils.formatEther(lpBalance)} J Parker Dev LP tokens
           </div>
           <div>
             {/* If reserved CD is zero, render the state for liquidity zero where we ask the user
@@ -362,7 +362,7 @@ export default function Home() {
                 />
                 <input
                   type="number"
-                  placeholder="Amount of CryptoDev tokens"
+                  placeholder="Amount of J Parker Dev tokens"
                   onChange={(e) =>
                     setAddCDTokens(
                       BigNumber.from(utils.parseEther(e.target.value || "0"))
@@ -394,7 +394,7 @@ export default function Home() {
                 />
                 <div className={styles.inputDiv}>
                   {/* Convert the BigNumber to string using the formatEther function from ethers.js */}
-                  {`You will need ${utils.formatEther(addCDTokens)} Crypto Dev
+                  {`You will need ${utils.formatEther(addCDTokens)} J Parker Dev
                   Tokens`}
                 </div>
                 <button className={styles.button1} onClick={_addLiquidity}>
@@ -416,7 +416,7 @@ export default function Home() {
               />
               <div className={styles.inputDiv}>
                 {/* Convert the BigNumber to string using the formatEther function from ethers.js */}
-                {`You will get ${utils.formatEther(removeCD)} Crypto
+                {`You will get ${utils.formatEther(removeCD)} J Parker
               Dev Tokens and ${utils.formatEther(removeEther)} Eth`}
               </div>
               <button className={styles.button1} onClick={_removeLiquidity}>
@@ -452,7 +452,7 @@ export default function Home() {
             }}
           >
             <option value="eth">Ethereum</option>
-            <option value="cryptoDevToken">Crypto Dev Token</option>
+            <option value="JParkerDevToken">JParker Dev Token</option>
           </select>
           <br />
           <div className={styles.inputDiv}>
@@ -460,7 +460,7 @@ export default function Home() {
             {ethSelected
               ? `You will get ${utils.formatEther(
                   tokenToBeRecievedAfterSwap
-                )} Crypto Dev Tokens`
+                )} J Parker Dev Tokens`
               : `You will get ${utils.formatEther(
                   tokenToBeRecievedAfterSwap
                 )} Eth`}
@@ -476,15 +476,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Crypto Devs</title>
+        <title>J Parker Devs</title>
         <meta name="description" content="Exchange-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs Exchange!</h1>
+          <h1 className={styles.title}>Welcome to J Parker Dev Exchange!</h1>
           <div className={styles.description}>
-            Exchange Ethereum &#60;&#62; Crypto Dev Tokens
+            Exchange Ethereum &#60;&#62; J Parker Dev Tokens
           </div>
           <div>
             <button
