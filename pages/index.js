@@ -507,7 +507,7 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./cryptodev.svg" />
+          <img className={styles.image} src="./cyborg-bitcoin-mining.png" />
         </div>
       </div>
 
